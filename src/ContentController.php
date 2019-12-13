@@ -16,7 +16,7 @@ class ContentController extends Controller
     {
         $contents = Content::all();
 
-        return view()->first(['contents.index', 'contents::index'])->with('contents');
+        return view()->first(['contents.index', 'contents::index'])->with(compact('contents'));
     }
 
     /**
