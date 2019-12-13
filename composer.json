@@ -1,4 +1,26 @@
 {
     "name": "l2k/content",
-    "require": {}
+    "description": "A Simple Laravel Content Package",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Francesco Lerose",
+            "email": "f.lerose@lynx2000.it"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "L2k\\Content\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "L2k\\Content\\ContentServiceProvider"
+            ]
+        }
+    }
 }
