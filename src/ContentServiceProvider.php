@@ -32,8 +32,8 @@ class ContentServiceProvider extends ServiceProvider
         // ]);
 
         $this->publishes([
-            __DIR__ . '/views' => base_path('resources/views/l2k/content/'),
+            __DIR__ . '/views' => base_path('resources/views/l2k/contents/'),
         ], 'views');
-        $this->loadViewsFrom(__DIR__ . '/views', 'content');
+        $this->loadViewsFrom(__DIR__ . '/views', 'contents');
     }
 }
