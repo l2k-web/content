@@ -25,10 +25,15 @@ class ContentServiceProvider extends ServiceProvider
     {
         $this->loadRoutesFrom(__DIR__ . '/routes.php');
         $this->loadMigrationsFrom(__DIR__ . '/database/migrations');
-        $this->loadViewsFrom(__DIR__ . '/views', 'contents');
+        // $this->loadViewsFrom(__DIR__ . '/views', 'contents');
+
+        // $this->publishes([
+        //     __DIR__ . '/views' => resource_path('views/vendor/l2k-content'),
+        // ]);
 
         $this->publishes([
-            __DIR__ . '/views' => resource_path('views/vendor/l2k-content'),
-        ]);
+            __DIR__ . '/views' => base_path('resources/views/l2k/content/'),
+        ], 'views');
+        $this->loadViewsFrom(__DIR__ . '/views', 'content');
     }
 }
