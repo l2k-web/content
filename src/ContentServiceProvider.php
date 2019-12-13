@@ -33,7 +33,7 @@ class ContentServiceProvider extends ServiceProvider
 
         $this->publishes([
             __DIR__ . '/views' => base_path('resources/views/l2k/contents/'),
-        ], 'views');
+        ], 'contents');
         $this->loadViewsFrom(__DIR__ . '/views', 'contents');
     }
 }
