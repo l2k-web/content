@@ -9,7 +9,7 @@
 
 <body>
 
-    EDIT
+    EDIT ONTHEFLY
     <div class="container">
         @yield('main')
     </div>
